@@ -5,7 +5,7 @@
 - CSS: style_index, style_register, style_contact, style_order, style_thanks
 - Javascript: index, register
 ## 2. Back-End
-- Javascript: app (including node.js)
+- Javascript: app (including express, node.js)
 ## 3. Database
 - SQL: MySQL
 - NoSQL: MongoDB
