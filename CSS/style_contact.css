@@ -1,0 +1,53 @@
+/* Author:        Yeji Soh */
+/* Date:          02/23/2020 */
+/* Course Module: CPRG 210 FRONTEND */
+/* Assignment:    Individual HTML/CSS/Javascript Assignment */
+
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Contact */
+body{
+    background-color: #fcefee;
+}
+h1, h2 {
+    margin: 1em;
+    Font-Family: 'Muli', Sans-Serif;
+}
+h3, p, .agent {
+    margin: 1em 2em;
+    Font-Family: 'Muli', Sans-Serif;
+}
+
+/* Gloal nav bar with logo */
+.header-container {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo {
+    margin-left: 2.3em;
+}
+nav {
+    align-self: center;
+    margin: 0 0.8em 0 0;
+}
+.header-container ul {
+    list-style: none;
+}
+.header-container ul .nav-li {
+    display: inline;
+    padding: 0 1.4em 0 0;
+    
+}
+a {
+    font-size: 20px;
+    Font-Family: 'Muli', Sans-Serif;
+    color: #333;
+    text-decoration: none;
+}
+

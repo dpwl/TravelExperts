@@ -1,0 +1,93 @@
+/* Author:        Yeji Soh */
+/* Date:          02/23/2020 */
+/* Course Module: CPRG 210 FRONTEND */
+/* Assignment:    Individual HTML/CSS/Javascript Assignment */
+
+/* Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    background-color: #fcefee;
+}
+h1, h2{
+    Font-Family: 'Muli', Sans-Serif;
+    margin: 0.5em;
+}
+
+.order-form{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 1em;
+    margin: 1em;
+}
+label{
+    grid-column: 1 / 2;
+    Font-Family: 'Muli', Sans-Serif;
+}
+input, textarea{
+    grid-column: 2 / 3;
+}
+.submit{
+    grid-column: 2 / 3;
+}
+
+/* Media Queries for Galaxy s8*/
+@media screen and (max-width: 767px) {
+    .cust-form, .order-form{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+        margin: 1em;
+    }
+    label{
+        grid-column: 1 / 2;
+        Font-Family: 'Muli', Sans-Serif;
+    }
+    input, textarea{
+        grid-column: 1 / 2;
+    }
+    .submit{
+        grid-column: 1 / 2;
+    }
+}
+
+/* Gloal nav bar with logo */
+.header-container {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo {
+    margin-left: 2.3em;
+}
+nav {
+    align-self: center;
+    margin: 0 0.8em 0 0;
+}
+.header-container ul {
+    list-style: none;
+}
+.header-container ul .nav-li {
+    display: inline;
+    padding: 0 1.4em 0 0;
+    
+}
+a {
+    font-size: 20px;
+    Font-Family: 'Muli', Sans-Serif;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Alert Style */
+.alert-ID, .alert-PW {
+    color: red;
+    Font-Family: 'Muli', Sans-Serif;
+}
+.active {
+    background-color: lightgreen;
+}
