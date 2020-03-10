@@ -1,0 +1,75 @@
+<!-- Author:        Yeji Soh -->
+<!-- Date:          02/23/2020 -->
+<!-- Course Module: CPRG 210 FRONTEND -->
+<!-- Assignment:    Individual HTML/CSS/Javascript Assignment -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Order" content="Order">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="style_order.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Muli:300" rel="stylesheet">
+    
+</head>
+<body>
+    <!--Gloal nav bar with logo-->
+    <header class="header-container">
+        <div class="logo">
+            <a href="index" title="Welcome to Travel Experts">
+            <img src="img/logo_other.JPG" width="250"></a>
+        </div>
+        <nav>
+            <ul>
+                <li class="nav-li"><a href="index"><strong>Home</strong></a></li>
+                <li class="nav-li"><a href="register"><strong>Register</strong></a></li>
+                <li class="nav-li"><a href="contact"><strong>Contact</strong></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Order Form</h1>
+        
+    <div>
+        <!-- information filled out in the form will be collected to corresponding account of getform.io. -->
+        <form class="order-form" method="POST" action="/order_form">
+            
+            <label>userID: * </label>
+            <input type="text" rules="required|min:3" id = "userID" name="userID" placeholder="Enter your userID." required>
+            <small id="alert-ID"></small>
+
+            <label>Password: * </label>
+            <input type="text" rules="required|min:3" id = "password" name="password" placeholder="Enter your password." required>
+            <small id="alert-PW"></small>
+
+            <!-- The Package Information below should be brought by whatever customer ordered; it's not supposed to be typed in here. -->
+
+            <label>Package Name:  </label>
+            <input type="text" rules="required|min:3" id = "pkgName" name="pkgName" required>
+
+            <label>Package Description:  </label>
+            <input type="text" rules="required|min:3" id = "pkgDesc" name="pkgDesc" required>
+
+            <label>Package Start-Date:  </label>
+            <input type="text" rules="required|min:3" id = "start-date" name="start-date" required>
+
+            <label>Package End-Date:  </label>
+            <input type="text" rules="required|min:3" id = "end-date" name="end-date" required>
+
+            <label>Package Price:  </label>
+            <input type="text" rules="required|min:3" id = "pkgPrice" name="pkgPrice" required>
+
+            <label>Special Request: </label>
+            <textarea name="message" placeholder="Anything you would like to tell us?"></textarea>
+            <br>
+            <input id="submit" type="submit" name="submit" value="Submit your booking.">
+            
+        </form>
+        
+    </div> 
+    </main>
+    <script src="order.js"></script>
+</body>
+</html>
